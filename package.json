@@ -1,0 +1,39 @@
+{
+  "name": "mashroom-portal-remote-app-background-job",
+  "version": "1.0.0",
+  "description": "Fork of official remote app background job adding failure delay",
+  "main": "index.js",
+  "scripts": {
+    "build": "swc ./src/** -d ./dist",
+    "lint": "eslint ./src --ext .ts",
+    "type-check": "tsc --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mashroom",
+    "portal",
+    "remote",
+    "app",
+    "failure",
+    "delay"
+  ],
+  "files": [
+    "dist/**"
+  ],
+  "author": "Milan Heimschild",
+  "license": "MIT",
+  "devDependencies": {
+    "@mashroom/mashroom": "^1.9.4",
+    "@mashroom/mashroom-background-jobs": "^1.9.4",
+    "@mashroom/mashroom-portal": "^1.9.4",
+    "@swc/cli": "^0.1.55",
+    "@swc/core": "^1.2.145",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
+    "eslint": "^8.10.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@mashroom/mashroom-portal-remote-app-registry": "^1.9.4"
+  }
+}

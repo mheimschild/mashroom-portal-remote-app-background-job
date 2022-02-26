@@ -1,0 +1,17 @@
+{
+    "$schema": "https://www.mashroom-server.com/schemas/mashroom-plugins.json",
+    "devModeBuildScript": "build",
+    "plugins": [
+      {
+        "name": "Mashroom Portal Remote App Background Job Failure Delay",
+        "type": "background-job",
+        "bootstrap": "./dist/mashroom-bootstrap-background-job.js",
+        "defaultConfig": {
+            "cronSchedule": "0/1 * * * *",
+            "socketTimeoutSec": 3,
+            "registrationRefreshIntervalSec": 600
+        }
+      }
+    ]
+  }
+  
